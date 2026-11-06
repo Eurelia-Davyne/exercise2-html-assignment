@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet"href="style2.css">
+    </head>
+    <body>
+        <div class="page-box">
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>Sur Name</label>
+                <input type="text"><br><br>
+                <label>First Name</label>
+                <input type="text"><br><br>
+                <label>Other Nmaes</label>
+                <input type="text"><br><br>
+                <label>Gender</label>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+                <br><br>
+                <label>Marital Status</label>
+                <select>
+                    <option>Select-status</option>
+                    <option>Single</option>
+                    <option>Married</option>
+                    <option>Divorced</option>
+                </select>
+                <br><br>
+                <label>Date of Birth</label>
+                <input type="Date"><br><br>
+                <label>Place of Birth</label>
+                <input type="text"><br><br>
+                <label>Mother's Name</label>
+                <input type="text"><br><br>
+                <label>Father's Name</label>
+                <input type="text"><br><br>
+                <label>number of Dependants</label>
+                <select>
+                    <option>select no of Dependants</option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <br><br>
+                <label>Level of Education</label>
+                <input type="text"
+            </fieldset>
+            </fieldset>
+        </form>
+        <fieldset>
+            <legend>Security Information</legend>
+            <label>UserName</label>
+            <input type="text"><br><br>
+            <label>Password</label>
+            <input type="password"><br><br>
+            <label>Re-type password</label>
+            <input type="password"><br><br>
+            <label>Security Question</label>
+            <select>
+                <option>Select - Question</option>
+                <option>What is your favourite colour?</option>
+                <option>What is your favourite food?</option>
+                <option>What is your favourite pet?</option>
+            </select>
+            <br><br>
+            <label>Answer</label>
+            <input type="text">
+        </fieldset>
+        <div class="buttons">
+            <button type="button"id="previous">Previous</button>
+            <button type="button"id="next">Next</button>
+        </div>
+        <h2 id="stepTitle">Step 1 of 5</h2>
+        <script>
+            let currentStep = 1;
+            let title = document.getElementById("stepTitle");
+            let previous = document.getElementById("previous");
+            let next = document.getElementById("next");
+            next.onclick = function() {
+                if (currentStep < 5) {
+                    currentStep++;
+                }
+            title.innerHTML = "Step" + currentStep +"of 5";
+        };
+        previous.onclick = function() {
+            if (currentStep > 1) {
+                currentStep--;
+            }
+            title.innerHTML = "step" + currentStep + "of 5";
+        }
+        </script>
+    </body>
+    <footer>
+            &copy; 2011 all rights reserved.
+        </footer>
+    </div>
+</html>

@@ -1,0 +1,71 @@
+body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+    }
+    .page-box {
+        width: 90%;
+        margin: 30px auto;
+        border: 2px solid gray;
+        padding: 20px;
+        border-bottom: 12px solid #0878b9;
+    }
+    h2 {
+        text-align: center;
+        color: #0878b9;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    form {
+        width: 75%;
+        margin: auto;
+    }
+    fieldset {
+        border: 2px solid lightblue;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        padding: 12px;
+    }
+    legend {
+        text-align: center;
+        font-weight: bold;
+    }
+    label {
+        display: inline-block;
+        width: 180px;
+        margin-bottom: 8px;
+    }
+    input {
+        width: 220px;
+        height: 22px;
+        border: 2px solid lightblue;
+        border-radius: 4px;
+    }
+    input [type="radio"] {
+        width: auto;
+        height: auto;
+    }
+    select {
+        width: 190px;
+        height: 30px;
+        border: 2px solid lightblue;
+        border-radius: 4px;
+    }
+    .buttons {
+        text-align: center;
+    }
+    button {
+        background-color: #279bd7;
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        margin: 3px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    footer {
+        background-color: #0878b9;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
